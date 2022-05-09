@@ -1,0 +1,132 @@
+$btn_download: #4d96a9;
+$btn_what: #855fb1;
+$title: #28283d;
+$description: #87879d;
+$btn_download_hover: #8fe3f9;
+$btn_what_hover: #b18bdd;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  text-align: center;
+  &__logo {
+    margin-block-start: 3em;
+  }
+
+  &__title {
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 900;
+    font-size: 2.2rem;
+    color: $title;
+    margin-inline: 3em;
+    margin-block-end: 0.8em;
+  }
+
+  &__flex {
+    display: flex;
+    height: 11em;
+    margin-block: 3em;
+
+    & img:nth-child(1) {
+      position: relative;
+      left: -1.4rem;
+    }
+  }
+
+  &__subtitle {
+    color: $description;
+    margin-inline: 1em;
+    font-family: "Red Hat Display", sans-serif;
+    margin-block-end: 2em;
+    font-size: 1.2rem;
+    font-weight: 600;
+    line-height: 1.7;
+  }
+
+  &__btn {
+    width: fit-content;
+    padding: 1em;
+    padding-inline: 2em;
+    border-radius: 3em;
+    font-family: "Red Hat Display", sans-serif;
+    font-weight: 900;
+    color: white;
+  }
+  &__btn__download {
+    background-color: $btn_download;
+  }
+
+  &__btn__flex {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    gap: 1em;
+    flex-direction: column;
+
+    & span {
+      color: $btn_download_hover;
+    }
+  }
+
+  &__btn__what {
+    background-color: $btn_what;
+    position: relative;
+  }
+}
+
+.divider-line{
+    display: grid;
+    place-items: center;
+    margin-block: 2em;
+}
+
+.grid{
+    display: grid;
+    padding: 2em;
+    gap: 1.7em;
+    grid-template-columns: repeat(2, 1fr);
+    margin-block-end: 2em;
+    & img{
+        border-radius: 1em;
+    }
+}
+
+.grid__content{
+    text-align: center;
+
+    &__small{
+        color: $btn_download;
+        text-transform: uppercase;
+        letter-spacing: .1em;
+        font-weight: 900;
+        font-size: 1.3em;
+        font-family: 'Red Hat Display', sans-serif;
+        margin-block-end: 2em;
+    }
+
+    &__title{
+        font-family: 'Red Hat Display', sans-serif;
+        margin-inline: 2em;
+        margin-block: 1em;
+        font-weight: 900;
+        color: $title;
+    }
+
+    &__description{
+        font-family: 'Red Hat Display', sans-serif;
+        color: $description;
+        margin-inline: 1.5em;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+}

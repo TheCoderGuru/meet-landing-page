@@ -1,0 +1,114 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  border: 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.hero {
+  text-align: center;
+}
+.hero__logo {
+  margin-block-start: 3em;
+}
+.hero__title {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 2.2rem;
+  color: #28283d;
+  margin-inline: 3em;
+  margin-block-end: 0.8em;
+}
+.hero__flex {
+  display: flex;
+  height: 11em;
+  margin-block: 3em;
+}
+.hero__flex img:nth-child(1) {
+  position: relative;
+  left: -1.4rem;
+}
+.hero__subtitle {
+  color: #87879d;
+  margin-inline: 1em;
+  font-family: "Red Hat Display", sans-serif;
+  margin-block-end: 2em;
+  font-size: 1.2rem;
+  font-weight: 600;
+  line-height: 1.7;
+}
+.hero__btn {
+  width: fit-content;
+  padding: 1em;
+  padding-inline: 2em;
+  border-radius: 3em;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: white;
+}
+.hero__btn__download {
+  background-color: #4d96a9;
+}
+.hero__btn__flex {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  gap: 1em;
+  flex-direction: column;
+}
+.hero__btn__flex span {
+  color: #8fe3f9;
+}
+.hero__btn__what {
+  background-color: #855fb1;
+  position: relative;
+}
+
+.divider-line {
+  display: grid;
+  place-items: center;
+  margin-block: 2em;
+}
+
+.grid {
+  display: grid;
+  padding: 2em;
+  gap: 1.7em;
+  grid-template-columns: repeat(2, 1fr);
+  margin-block-end: 2em;
+}
+.grid img {
+  border-radius: 1em;
+}
+
+.grid__content {
+  text-align: center;
+}
+.grid__content__small {
+  color: #4d96a9;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  font-weight: 900;
+  font-size: 1.3em;
+  font-family: "Red Hat Display", sans-serif;
+  margin-block-end: 2em;
+}
+.grid__content__title {
+  font-family: "Red Hat Display", sans-serif;
+  margin-inline: 2em;
+  margin-block: 1em;
+  font-weight: 900;
+  color: #28283d;
+}
+.grid__content__description {
+  font-family: "Red Hat Display", sans-serif;
+  color: #87879d;
+  margin-inline: 1.5em;
+  text-align: center;
+  font-size: 1.2rem;
+}
