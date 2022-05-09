@@ -6,6 +6,10 @@
   border: 0;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 img {
   max-width: 100%;
 }
@@ -52,7 +56,7 @@ img {
   color: white;
 }
 .hero__btn__download {
-  background-color: #4d96a9;
+  background-color: #4d96a8;
 }
 .hero__btn__flex {
   justify-content: center;
@@ -75,6 +79,14 @@ img {
   margin-block: 2em;
 }
 
+.divider-line-lower {
+  display: grid;
+  place-items: center;
+  margin-block: 2em;
+  position: relative;
+  bottom: -4rem;
+}
+
 .grid {
   display: grid;
   padding: 2em;
@@ -90,25 +102,58 @@ img {
   text-align: center;
 }
 .grid__content__small {
-  color: #4d96a9;
+  color: #4d96a8;
   text-transform: uppercase;
   letter-spacing: 0.1em;
   font-weight: 900;
-  font-size: 1.3em;
+  font-size: 1em;
   font-family: "Red Hat Display", sans-serif;
   margin-block-end: 2em;
 }
 .grid__content__title {
   font-family: "Red Hat Display", sans-serif;
-  margin-inline: 2em;
-  margin-block: 1em;
+  margin-inline: 3em;
+  margin-block-start: 1em;
+  margin-block-end: 0.5em;
   font-weight: 900;
   color: #28283d;
+  font-size: 1.8rem;
 }
 .grid__content__description {
   font-family: "Red Hat Display", sans-serif;
   color: #87879d;
-  margin-inline: 1.5em;
+  margin-inline: 3.4em;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
+  line-height: 1.7rem;
+}
+
+.experience {
+  text-align: center;
+  background-image: linear-gradient(rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), url(../assets/mobile/image-footer.jpg);
+  padding: 3em;
+}
+.experience__title {
+  font-family: "Red Hat Display", sans-serif;
+  color: white;
+  margin-inline: 1em;
+  margin-block-start: 1.1em;
+}
+.experience__description {
+  font-family: "Red Hat Display", sans-serif;
+  margin-inline: 4em;
+  color: white;
+  margin-block-start: 1em;
+  margin-block-end: 3em;
+}
+.experience__button {
+  width: fit-content;
+  padding: 1em;
+  padding-inline: 2em;
+  border-radius: 3em;
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  color: white;
+  background-color: #855fb1;
+  margin-block-end: 4em;
 }
