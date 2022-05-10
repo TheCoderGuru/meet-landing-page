@@ -70,7 +70,7 @@ img {
   &__btn__download {
     background-color: $btn_download;
     &:hover{
-      background-color: #8fe3f9;
+      background-color: #71C0D4;
       transition: 0.4s ease;
       cursor: pointer;
     }
@@ -121,6 +121,7 @@ img {
   // place-items: center;
   & img {
     border-radius: 1em;
+    max-width: 100%;
   }
 }
 
@@ -139,7 +140,7 @@ img {
 
   &__title {
     font-family: "Red Hat Display", sans-serif;
-    margin-inline: 3em;
+    margin-inline: 1em;
     margin-block-start: .4em;
     margin-block-end: .6em;
     font-weight: 900;
@@ -172,7 +173,7 @@ img {
   &__title {
     font-family: "Red Hat Display", sans-serif;
     color: white;
-    margin-inline: 3em;
+    margin-inline: 1em;
     font-size: 40px;
     line-height: 44px;
     margin-block-start: 1.1em;
@@ -197,6 +198,7 @@ img {
     font-weight: 900;
     color: white;
     font-size: 16px;
+    height: fit-content;
     background-color: #855fb1;
     margin-block-end: 4em;
   }
@@ -236,4 +238,70 @@ img {
 }
 
 @media only screen and ( min-width: 1440px ){
+  .hero__content{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 8.5rem;
+    margin-inline: 6em;
+    align-items: center;
+  }
+
+  .grid{
+    display: grid;
+    place-items: center;
+  }
+
+  .hero__flex{
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+  }
+
+  .hero__title{
+    padding-inline: 8em;
+  }
+
+  .hero__subtitle{
+    margin-inline: 30em;
+  }
+
+  .grid__content__title{
+    padding-inline: 18em;
+  }
+
+  .grid img{
+    margin: 2em;
+    height: 21em;
+    width: auto;
+    border-radius: .3em;
+  }
+
+  .grid__content__description{
+    padding-inline: 39em;
+  }
+
+  .experience{
+    display: flex;
+
+    &__title{
+      margin-block-start: .5em;
+      margin-inline: 2em;
+      text-align: left;
+    }
+
+    &__description{
+      text-align: left;
+       margin-block-start: 1.5em;
+       padding-inline: 19em;
+    }
+
+    &__div{
+      margin-block-start: 2em;
+    }
+    &__button{
+      white-space: nowrap;
+      margin-block-start: 2em;
+    }
+  }
 }
