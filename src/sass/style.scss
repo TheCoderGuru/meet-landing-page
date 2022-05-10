@@ -148,7 +148,11 @@ img {
 .experience {
   text-align: center;
   // background-color: #8fe3f9;
-  background-image: linear-gradient(rgb(77, 150, 168, 0.8), rgb(77, 150, 168,  0.8)), url(../assets/mobile/image-footer.jpg);
+  background-image: linear-gradient(
+      rgb(77, 150, 168, 0.8),
+      rgb(77, 150, 168, 0.8)
+    ),
+    url(../assets/mobile/image-footer.jpg);
   padding: 3em;
 
   &__title {
@@ -176,5 +180,19 @@ img {
     color: white;
     background-color: #855fb1;
     margin-block-end: 4em;
+  }
+}
+
+@media only screen and ( min-width: 1200px) {
+  .hero__flex {
+    display: flex;
+    height: 20em;
+    width: auto;
+    margin-block: 3em;
+  }
+
+  .center-grid{
+    display: grid;
+    place-items: center;
   }
 }

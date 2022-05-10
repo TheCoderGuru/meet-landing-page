@@ -157,3 +157,17 @@ img {
   background-color: #855fb1;
   margin-block-end: 4em;
 }
+
+@media only screen and (min-width: 1200px) {
+  .hero__flex {
+    display: flex;
+    height: 20em;
+    width: auto;
+    margin-block: 3em;
+  }
+
+  .center-grid {
+    display: grid;
+    place-items: center;
+  }
+}
