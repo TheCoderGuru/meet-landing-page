@@ -23,15 +23,16 @@ img {
 .hero__title {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
-  font-size: 2.2rem;
+  font-size: 40px;
   color: #28283d;
-  margin-inline: 3em;
+  line-height: 48px;
   margin-block-end: 0.8em;
 }
 .hero__flex {
   display: flex;
-  height: 11em;
+  height: 12em;
   margin-block: 3em;
+  overflow-x: hidden;
 }
 .hero__flex img:nth-child(1) {
   position: relative;
@@ -58,6 +59,11 @@ img {
 .hero__btn__download {
   background-color: #4d96a8;
 }
+.hero__btn__download:hover {
+  background-color: #8fe3f9;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
 .hero__btn__flex {
   justify-content: center;
   align-items: center;
@@ -70,7 +76,11 @@ img {
 }
 .hero__btn__what {
   background-color: #855fb1;
-  position: relative;
+}
+.hero__btn__what:hover {
+  background-color: #b18bdd;
+  transition: 0.2s ease;
+  cursor: pointer;
 }
 
 .divider-line {
@@ -85,6 +95,7 @@ img {
   margin-block: 2em;
   position: relative;
   bottom: -4rem;
+  z-index: 1;
 }
 
 .grid {
@@ -104,46 +115,53 @@ img {
 .grid__content__small {
   color: #4d96a8;
   text-transform: uppercase;
-  letter-spacing: 0.1em;
+  letter-spacing: 4px;
   font-weight: 900;
   font-size: 1em;
   font-family: "Red Hat Display", sans-serif;
-  margin-block-end: 2em;
+  margin-block-end: 1em;
 }
 .grid__content__title {
   font-family: "Red Hat Display", sans-serif;
   margin-inline: 3em;
-  margin-block-start: 1em;
-  margin-block-end: 0.5em;
+  margin-block-start: 0.4em;
+  margin-block-end: 0.6em;
   font-weight: 900;
   color: #28283d;
-  font-size: 1.8rem;
+  font-size: 40px;
 }
 .grid__content__description {
   font-family: "Red Hat Display", sans-serif;
   color: #87879d;
-  margin-inline: 3.4em;
+  margin-inline: 6.3em;
   text-align: center;
-  font-size: 1.1rem;
-  line-height: 1.7rem;
+  font-size: 16px;
+  line-height: 26px;
 }
 
 .experience {
   text-align: center;
-  background-image: linear-gradient(rgba(77, 150, 168, 0.8), rgba(77, 150, 168, 0.8)), url(../assets/mobile/image-footer.jpg);
+  background-image: linear-gradient(rgba(77, 150, 168, 0.9), rgba(77, 150, 168, 0.8)), url(../assets/mobile/image-footer.jpg);
   padding: 3em;
+  mix-blend-mode: screen;
+  background-size: cover;
+  background-position-y: 20%;
 }
 .experience__title {
   font-family: "Red Hat Display", sans-serif;
   color: white;
-  margin-inline: 1em;
+  margin-inline: 3em;
+  font-size: 40px;
+  line-height: 44px;
   margin-block-start: 1.1em;
 }
 .experience__description {
   font-family: "Red Hat Display", sans-serif;
-  margin-inline: 4em;
+  margin-inline: 3em;
   color: white;
-  margin-block-start: 1em;
+  margin-block-start: 1.5em;
+  line-height: 26px;
+  font-size: 18px;
   margin-block-end: 3em;
 }
 .experience__button {
@@ -154,20 +172,38 @@ img {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
   color: white;
+  font-size: 16px;
   background-color: #855fb1;
   margin-block-end: 4em;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .hero__flex {
-    display: flex;
-    height: 20em;
+    height: 19em;
     width: auto;
-    margin-block: 3em;
+  }
+  .hero__flex img:nth-child(2) {
+    position: relative;
+    right: -1.4rem;
   }
 
-  .center-grid {
+  .hero__title {
+    font-size: 48px;
+    margin-inline: 4.5em;
+    line-height: 48px;
+    text-align: center;
+  }
+
+  .hero__subtitle {
+    margin-inline: 6em;
+  }
+
+  .hero__btn__flex {
+    flex-direction: row;
+  }
+
+  .grid {
     display: grid;
-    place-items: center;
+    grid-template-columns: repeat(4, 1fr);
   }
 }

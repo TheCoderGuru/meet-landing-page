@@ -30,16 +30,17 @@ img {
   &__title {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 900;
-    font-size: 2.2rem;
+    font-size: 40px;
     color: $title;
-    margin-inline: 3em;
+    line-height: 48px;
     margin-block-end: 0.8em;
   }
 
   &__flex {
     display: flex;
-    height: 11em;
+    height: 12em;
     margin-block: 3em;
+    overflow-x: hidden;
 
     & img:nth-child(1) {
       position: relative;
@@ -68,6 +69,11 @@ img {
   }
   &__btn__download {
     background-color: $btn_download;
+    &:hover{
+      background-color: #8fe3f9;
+      transition: 0.4s ease;
+      cursor: pointer;
+    }
   }
 
   &__btn__flex {
@@ -84,7 +90,11 @@ img {
 
   &__btn__what {
     background-color: $btn_what;
-    position: relative;
+    &:hover{
+      background-color: #b18bdd;
+      transition: 0.2s ease;
+      cursor: pointer;
+    }
   }
 }
 
@@ -99,6 +109,7 @@ img {
   margin-block: 2em;
   position: relative;
   bottom: -4rem;
+  z-index: 1;
 }
 
 .grid {
@@ -107,6 +118,7 @@ img {
   gap: 1.7em;
   grid-template-columns: repeat(2, 1fr);
   margin-block-end: 2em;
+  // place-items: center;
   & img {
     border-radius: 1em;
   }
@@ -118,55 +130,61 @@ img {
   &__small {
     color: $btn_download;
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 4px;
     font-weight: 900;
     font-size: 1em;
     font-family: "Red Hat Display", sans-serif;
-    margin-block-end: 2em;
+    margin-block-end: 1em;
   }
 
   &__title {
     font-family: "Red Hat Display", sans-serif;
     margin-inline: 3em;
-    margin-block-start: 1em;
-    margin-block-end: 0.5em;
+    margin-block-start: .4em;
+    margin-block-end: .6em;
     font-weight: 900;
     color: $title;
-    font-size: 1.8rem;
+    font-size: 40px;
   }
 
   &__description {
     font-family: "Red Hat Display", sans-serif;
     color: $description;
-    margin-inline: 3.4em;
+    margin-inline: 6.3em;
     text-align: center;
-    font-size: 1.1rem;
-    line-height: 1.7rem;
+    font-size: 16px;
+    line-height: 26px;
   }
 }
 
 .experience {
   text-align: center;
-  // background-color: #8fe3f9;
   background-image: linear-gradient(
-      rgb(77, 150, 168, 0.8),
+      rgb(77, 150, 168, 0.9),
       rgb(77, 150, 168, 0.8)
     ),
     url(../assets/mobile/image-footer.jpg);
   padding: 3em;
+  mix-blend-mode: screen;
+  background-size: cover;
+  background-position-y: 20%;
 
   &__title {
     font-family: "Red Hat Display", sans-serif;
     color: white;
-    margin-inline: 1em;
+    margin-inline: 3em;
+    font-size: 40px;
+    line-height: 44px;
     margin-block-start: 1.1em;
   }
 
   &__description {
     font-family: "Red Hat Display", sans-serif;
-    margin-inline: 4em;
+    margin-inline: 3em;
     color: white;
-    margin-block-start: 1em;
+    margin-block-start: 1.5em;
+    line-height: 26px;
+    font-size: 18px;
     margin-block-end: 3em;
   }
 
@@ -178,21 +196,44 @@ img {
     font-family: "Red Hat Display", sans-serif;
     font-weight: 900;
     color: white;
+    font-size: 16px;
     background-color: #855fb1;
     margin-block-end: 4em;
   }
 }
 
-@media only screen and ( min-width: 1200px) {
+@media only screen and (min-width: 768px) {
   .hero__flex {
-    display: flex;
-    height: 20em;
+    height: 19em;
     width: auto;
-    margin-block: 3em;
+
+    & img:nth-child(2) {
+      position: relative;
+      right: -1.4rem;
+    }
   }
 
-  .center-grid{
-    display: grid;
-    place-items: center;
+  .hero__title {
+    font-size: 48px;
+    margin-inline: 4.5em;
+    line-height: 48px;
+    text-align: center;
   }
+
+  .hero__subtitle{
+    margin-inline: 6em;
+  }
+
+  .hero__btn__flex{
+    flex-direction: row;
+  }
+
+  .grid{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+}
+
+@media only screen and ( min-width: 1440px ){
 }
