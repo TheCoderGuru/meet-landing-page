@@ -231,15 +231,15 @@ img {
   }
 
   .hero__title {
-    padding-inline: 8em;
+    padding-inline: 5em;
   }
 
   .hero__subtitle {
-    margin-inline: 30em;
+    margin-inline: 19em;
   }
 
   .grid__content__title {
-    padding-inline: 18em;
+    padding-inline: 11.3em;
   }
 
   .grid img {
@@ -250,21 +250,22 @@ img {
   }
 
   .grid__content__description {
-    padding-inline: 39em;
+    padding-inline: 25em;
+    font-weight: 500;
   }
 
   .experience {
     display: flex;
   }
   .experience__title {
-    margin-block-start: 0.5em;
-    margin-inline: 2em;
+    margin-block-start: 0.7em;
+    margin-inline-start: 2em;
     text-align: left;
   }
   .experience__description {
     text-align: left;
     margin-block-start: 1.5em;
-    padding-inline: 19em;
+    padding-inline: 8em;
   }
   .experience__div {
     margin-block-start: 2em;
