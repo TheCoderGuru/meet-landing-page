@@ -86,7 +86,8 @@ img {
 .divider-line {
   display: grid;
   place-items: center;
-  margin-block: 2em;
+  margin-block-start: 8em;
+  margin-block-end: 2em;
 }
 
 .divider-line-lower {
@@ -101,9 +102,10 @@ img {
 .grid {
   display: grid;
   padding: 2em;
-  gap: 1.7em;
+  gap: 1em;
   grid-template-columns: repeat(2, 1fr);
   margin-block-end: 2em;
+  place-items: center;
 }
 .grid img {
   border-radius: 1em;
@@ -206,7 +208,7 @@ img {
 
   .grid {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(4, 0.3fr);
   }
 }
 @media only screen and (min-width: 1440px) {
@@ -220,6 +222,13 @@ img {
   }
 
   .grid {
+    display: grid;
+    place-items: center;
+    place-content: center;
+    width: fit-content;
+  }
+
+  .centered-grid {
     display: grid;
     place-items: center;
   }
@@ -245,9 +254,9 @@ img {
   }
 
   .grid img {
-    margin: 2em;
-    height: 21em;
+    height: 13em;
     width: auto;
+    object-fit: cover;
     border-radius: 0.3em;
   }
 
