@@ -214,7 +214,7 @@ img {
     display: flex;
     flex-direction: column;
     position: absolute;
-    top: 8.5rem;
+    top: 11.5rem;
     margin-inline: 6em;
     align-items: center;
   }
@@ -231,8 +231,8 @@ img {
   }
 
   .hero__title {
-    padding-inline: 5em;
-    font-size: 49px;
+    padding-inline: 4em;
+    font-size: 53px;
   }
 
   .hero__subtitle {
@@ -241,6 +241,7 @@ img {
 
   .grid__content__title {
     padding-inline: 11.3em;
+    line-height: 1.1;
   }
 
   .grid img {
@@ -257,22 +258,26 @@ img {
 
   .experience {
     display: flex;
+    padding: 0.5em;
   }
   .experience__title {
-    margin-block-start: 0.7em;
-    margin-inline-start: 2em;
+    margin-block-start: 1.7em;
+    margin-inline-start: 2.4em;
     text-align: left;
+    font-size: 2.1rem;
+    line-height: 1;
   }
   .experience__description {
     text-align: left;
-    margin-block-start: 1.5em;
-    padding-inline: 8em;
+    margin-block-start: 3.4em;
+    padding-inline: 10em;
   }
   .experience__div {
     margin-block-start: 2em;
   }
   .experience__button {
     white-space: nowrap;
-    margin-block-start: 2em;
+    margin-block-start: 4em;
+    margin-inline-end: 4em;
   }
 }
